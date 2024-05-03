@@ -1,0 +1,123 @@
+.container_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  position: fixed;
+  background-color: var(--background-menu-inicio);
+  z-index: 1;
+}
+
+.container_menu {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_menu .titulo a {
+  color: var(--color-title);
+}
+
+.container_menu .titulo a h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.container_menu .titulo a:hover h1 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-top: 2px;
+  color: var(--color-title-hover);
+}
+
+.container_menu .titulo a::before,
+.container_menu .titulo a::after {
+  content: attr(data-char);
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.container_menu .container_nav nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container_menu .container_nav nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  color: var(--color-menu);
+  font-family: 'Roboto', sans-serif;
+}
+
+.traco {
+  width: 100%;
+  height: 30px;
+  color: var(--color-traco-menu);
+  background-color: color;
+  border-left: 1px solid;
+  position: relative;
+  top: 5px;
+}
+
+.container_menu .container_nav nav ul li a:hover {
+  color: var(--color-menu-hover);
+}
+
+.darkmode button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 5px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 3em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: var(--color-menu-hamburguer);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.active {
+  display: none;
+}

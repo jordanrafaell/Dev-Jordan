@@ -1,0 +1,102 @@
+@import './components/menu.css';
+@import './components/inicio.css';
+@import './components/sobre.css';
+@import './components/habilidades.css';
+@import './components/trabalhos.css';
+@import './components/testemunhas.css';
+@import './components/formulario.css';
+@import './components/medias.css';
+
+/* Estilos Globais */
+/* Fontes Importadas Google Fontes */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+@import 'animate.css';
+
+/* Modo dark */
+:root {
+  --color-title: #F9FAFB;
+  --color-menu: rgb(255, 254, 254);
+  --background-menu-inicio: #030712;
+  --color-traco-menu: #6c6b6b;
+  --color-menu-hover: #b6b6b6;
+  --color-title-hover: #b6b6b6;
+  --traco-container-menu: #6b6b6b67;
+  --color-menu-hamburguer: rgb(255, 255, 255);
+  --color-sombra-foto: #374151;
+  --color-background-sobre: #111827;
+  --color-background-projetos-gradient: linear-gradient(90deg, rgba(55, 65, 81, 1) 50%, rgba(17, 24, 39, 1) 50%);
+  --color-background-projetos-gradient-segundo: linear-gradient(90deg, rgba(17, 24, 39, 1) 50%, rgba(55, 65, 81, 1) 50%);
+  --midia-background-habilidade: rgb(40, 37, 37);
+}
+
+/* Modo light */
+.dark_mode:root {
+  --color-title: #000000;
+  --color-menu: #000000;
+  --color-menu-hover: #767676;
+  --background-menu-inicio: #FFFFFF;
+  --color-traco-menu: #42424288;
+  --traco-container-menu: #6b6b6b00;
+  --color-menu-hamburguer: black;
+  --color-sombra-foto: #e5e7eb;
+  --color-background-sobre: #D1D5DB;
+  --color-background-projetos-gradient: linear-gradient(90deg, #e8e9ec 50%, rgb(255, 255, 255) 50%);
+  --color-background-projetos-gradient-segundo: linear-gradient(90deg, #D1D5DB 50%, rgb(255, 255, 255) 50%);
+  --midia-background-habilidade: rgb(40, 37, 37);
+}
+
+body, html {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 8s;
+  /* don't forget to set a duration! */
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.max_width {
+  max-width: 1225px;
+}
+
+.titulo_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.titulo_section p {
+  margin-top: 1rem;
+  color: var(--color-menu);
+  font-weight: 450;
+}
+
+.titulo_section h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 150px;
+  height: 30px;
+  color: var(--color-title);
+  background-color: var(--color-sombra-foto);
+}

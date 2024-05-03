@@ -1,0 +1,329 @@
+@media (max-width: 19000px) {
+  .menu_hamburguer {
+    display: none;
+  }
+}
+
+@media (max-width: 1090px) and (min-width: 768px) {
+  .container_conteudo_sobre {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+
+  .container_gif_sobre {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+  }
+
+  .container_gif_sobre img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: -50px -30px 0px var(--color-sombra-foto);
+    border-radius: 15px;
+  }
+
+  .titulo_mensagem_sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .column_projeto {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    min-height: 480px;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .projeto_column {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: var(--color-sombra-foto);
+  }
+
+  .projeto_img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 575px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+  }
+
+  .projeto_img img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .text_projeto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-left: 3.5rem;
+  }
+
+  .habilidades_projetos p {
+    color: white;
+    background-color: var(--midia-background-habilidade);
+  }
+
+  .column_projeto:nth-of-type(3) {
+    background: var(--color-background-projetos-gradient-segundo);
+  }
+
+  .column_projeto:nth-of-type(3) .projeto_column .text_projeto {
+    order: 1;
+  }
+
+  .column_projeto:nth-of-type(3) .projeto_column .projeto_img {
+    order: 1;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu_hamburguer {
+    display: flex;
+  }
+
+  .active_menu {
+    display: none;
+  }
+
+  .nav_menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .nav_menu ul {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-menu-inicio);
+  }
+
+  .nav_menu ul li a {
+    font-size: 30px;
+  }
+
+  .darkmode .btn_dark img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .traco {
+    display: none;
+  }
+
+  .container_conteudo {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .container_conteudo .container_mensagem {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    order: 2;
+  }
+
+  .container_conteudo .container_mensagem .mensagem_apresentacao h1 {
+    font-size: 30px !important;
+    font-weight: 700;
+    color: var(--color-title);
+  }
+
+  .container_conteudo .foto_perfil {
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    position: relative;
+    top: 1rem;
+    order: 1;
+  }
+
+  .container_conteudo .foto_perfil img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+  }
+
+
+  .container_gif_sobre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+    height: 100%;
+  }
+
+  .container_gif_sobre img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    box-shadow: -20px -30px 0px var(--color-sombra-foto);
+    border-radius: 15px;
+  }
+
+  .titulo_mensagem_sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .column_projeto {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    min-height: 480px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .projeto_column {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-sombra-foto);
+  }
+
+  .projeto_img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 575px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+  }
+
+  .projeto_img img {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .text_projeto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .habilidades_projetos p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    background-color: var(--midia-background-habilidade);
+  }
+
+  .column_projeto:nth-of-type(3) {
+    background: var(--color-background-projetos-gradient-segundo);
+  }
+
+  .column_projeto:nth-of-type(3) .projeto_column .text_projeto {
+    order: 1;
+  }
+
+  .column_projeto:nth-of-type(3) .projeto_column .projeto_img {
+    order: 1;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 480px) and (min-width: 100px) {
+  .container_conteudo .container_mensagem p {
+    display: flex;
+    width: 100%;
+    max-width: 340px;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .projeto_img img {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .container_menu .container_nav nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+  }
+
+}

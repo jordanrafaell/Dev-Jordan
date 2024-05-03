@@ -1,0 +1,48 @@
+#contato {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-color: var(--color-background-sobre);
+}
+
+.texto_contato {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  color: var(--color-menu);
+}
+
+.sub_titulo_contato {
+  font-size: 20px;
+}
+
+.contatos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  gap: 1rem;
+}
+
+.contatos a{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 20px;
+  color: var(--color-menu);
+}
+
+.contatos a span{
+  margin-top: 10px;
+  color: blue;
+}
