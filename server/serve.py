@@ -8,7 +8,7 @@ def submit_form():
     # ...
 
     # Após o processamento bem-sucedido, redirecionar para a página de agradecimento
-    return redirect('https://dev-jordan.vercel.app/')
+    return redirect('https://dev-jordan.vercel.app/obrigado.html')
 
 if __name__ == '__main__':
     app.run()

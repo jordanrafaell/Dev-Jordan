@@ -425,8 +425,8 @@
             </div>
           </div>
 
-          <div class="formbold-input-radio-wrapper">
-            <label for="jobtitle" class="form_label"> O que você está procurando? </label>
+          <div class="container_form_radio">
+            <label for="jobtitle" class="form_label_radio"> O que você está procurando? </label>
 
             <div class="container_radio_input">
               <div class="container_itens_radio">
@@ -448,7 +448,15 @@
               <div class="container_itens_radio">
                 <label class="form_label_radio">
                   <input class="form_input_radio" type="radio" name="jobtitle" id="jobtitle">
-                  Consulta/Avaliação
+                  Automação RPA
+                  <span class="form_radio_span"></span>
+                </label>
+              </div>
+
+              <div class="container_itens_radio">
+                <label class="form_label_radio">
+                  <input class="form_input_radio" type="radio" name="jobtitle" id="jobtitle">
+                  Consulta
                   <span class="form_radio_span"></span>
                 </label>
               </div>
@@ -471,9 +479,9 @@
             </div>
           </div>
 
-          <div>
-            <label for="message" class="form_label"> Escreva sua mensagem </label>
-            <textarea rows="6" name="message" id="message" placeholder="Eu preciso.." class="form_input"
+          <div class="container_textarea">
+            <label for="message" class="form_label_radio"> Escreva sua mensagem </label>
+            <textarea name="message" id="message" placeholder="Eu preciso.."
               required></textarea>
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next"
