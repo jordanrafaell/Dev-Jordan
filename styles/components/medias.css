@@ -1,4 +1,4 @@
-@media (max-width: 19000px){
+@media (max-width: 19000px) {
   .menu_hamburguer {
     display: none;
   }
@@ -215,7 +215,6 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    background: var(--color-background-projetos-gradient-segundo);
   }
 
   .projeto_column {
@@ -259,6 +258,10 @@
   .habilidades_projetos p {
     display: flex;
     width: 100%;
+    max-width: 100px;
+    height: 100%;
+    min-height: 30px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;

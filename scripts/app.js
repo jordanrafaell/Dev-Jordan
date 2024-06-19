@@ -41,7 +41,6 @@ btnMenu.addEventListener('click', () => {
   }
 });
 
-
 // mudança de imagem light e dark
 // Função para alternar entre os modos light e dark
 function alternarModo() {
@@ -49,32 +48,53 @@ function alternarModo() {
   const imagensDark = document.querySelectorAll('.imagem-dark');
 
   if (document.documentElement.classList.contains('dark_mode')) {
-    imagensLight.forEach(img => img.style.display = 'block');
-    imagensDark.forEach(img => img.style.display = 'none');
+    imagensLight.forEach((img) => (img.style.display = 'block'));
+    imagensDark.forEach((img) => (img.style.display = 'none'));
   } else {
-    imagensLight.forEach(img => img.style.display = 'none');
-    imagensDark.forEach(img => img.style.display = 'block');
+    imagensLight.forEach((img) => (img.style.display = 'none'));
+    imagensDark.forEach((img) => (img.style.display = 'block'));
   }
 }
 
 // Event listener para o botão de alternância de modo
 btnDark.addEventListener('click', alternarModo);
 
-// Chamada inicial para exibir apenas as imagens correspondentes ao modo de tema padrão
 alternarModo();
 
-// Desfoque quando a rolagem da tela e feita
+// Função para navegação de lista
+document.addEventListener('DOMContentLoaded', function () {
+  // Oculta todos os projetos, exceto aqueles com o ID "templates"
+  var projetos = document.querySelectorAll('.column_projeto');
+  projetos.forEach(function (projeto) {
+    if (projeto.id !== 'templates') {
+      projeto.style.display = 'none';
+    }
+  });
 
+  // Seleciona todos os links da lista
+  var links = document.querySelectorAll('.nav_List_projetos a');
 
+  // Adiciona um evento de clique a cada link
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      // Previne o comportamento padrão do link (navegação)
+      event.preventDefault();
 
+      // Obtém o ID do alvo do link
+      var targetId = link.getAttribute('href').substring(1);
 
+      // Oculta todos os projetos
+      projetos.forEach(function (projeto) {
+        projeto.style.display = 'none';
+      });
 
-
-
-
-
-
-
-
-
-
+      // Mostra todos os projetos correspondentes ao ID do link clicado
+      var projetosAlvo = document.querySelectorAll(
+        ".column_projeto[id='" + targetId + "']"
+      );
+      projetosAlvo.forEach(function (projeto) {
+        projeto.style.display = 'flex';
+      });
+    });
+  });
+});

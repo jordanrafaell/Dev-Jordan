@@ -27,6 +27,7 @@
   --color-background-projetos-gradient: linear-gradient(90deg, rgba(55, 65, 81, 1) 50%, rgba(17, 24, 39, 1) 50%);
   --color-background-projetos-gradient-segundo: linear-gradient(90deg, rgba(17, 24, 39, 1) 50%, rgba(55, 65, 81, 1) 50%);
   --midia-background-habilidade: rgb(40, 37, 37);
+  --color-traco-border: red;
 }
 
 /* Modo light */
@@ -43,6 +44,7 @@
   --color-background-projetos-gradient: linear-gradient(90deg, #e8e9ec 50%, rgb(255, 255, 255) 50%);
   --color-background-projetos-gradient-segundo: linear-gradient(90deg, #D1D5DB 50%, rgb(255, 255, 255) 50%);
   --midia-background-habilidade: rgb(40, 37, 37);
+  --color-traco-border: black;
 }
 
 body, html {

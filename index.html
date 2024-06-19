@@ -105,10 +105,10 @@
                 <img class="imagem-dark" src="/images/redes/linkedin-light.png" alt="">
                 <img class="imagem-light" src="/images/redes/linkedin-dark.png" alt="">
               </a>
-              <a href="https://www.figma.com/@devjordan" target="_blank">
+              <!-- <a href="https://www.figma.com/@devjordan" target="_blank">
                 <img class="imagem-dark" src="/images/redes/figma-light.svg" alt="">
                 <img class="imagem-light" src="/images/redes/figma-dark.svg" alt="">
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="foto_perfil">
@@ -138,7 +138,8 @@
             <p>Quando não estou imerso no mundo do desenvolvimento, gosto de explorar o universo da tecnologia, criar
               designs e outros projetos criativos. Sinta-se à vontade para me acompanhar no <a
                 href="https://github.com/jordanrafaell" target="_blank">GitHub</a> e <a
-                href="https://www.youtube.com/channel/UCsogylHnK04Owsa00mgjTyQ">YouTube</a> para ver meus
+                href="https://www.youtube.com/channel/UCsogylHnK04Owsa00mgjTyQ" target="_blank">YouTube</a> para ver
+              meus
               projetos em ação.</p>
             <p>Uma última coisa, estou disponível para trabalhos freelance, então sinta-se livre para entrar em <a
                 href="#contato">contato</a>
@@ -231,19 +232,42 @@
       <div class="container_projetos">
         <div class="titulo_section">
           <h6>Projetos</h6>
-          <p>Alguns dos projetos que construí:</p>
+          <!-- <p>Alguns dos projetos que construí:</p> -->
         </div>
 
-        <div class="column_projeto">
+        <div class="navegacao_projetos">
+          <nav class="nav_List_projetos">
+            <ul type="none" id="list_projetos">
+              <a href="#templates">
+                <li>Templates</li>
+              </a>
+              <a href="#apps">
+                <li>Aplicativos</li>
+              </a>
+              <a href="#auto">
+                <li>Automações</li>
+              </a>
+              <a href="#lojas">
+                <li>Lojas</li>
+              </a>
+              <a href="#blogs">
+                <li>Blog</li>
+              </a>
+              <a href="#construindo">
+                <li>Construindo</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="column_projeto" id="construindo">
           <div class="projeto_column">
             <div class="projeto_img">
-              <a href="https://github.com/jordanrafaell/Dev-Jordan/assets/61181764/a84d4e79-128d-451a-b1a1-fa16c81705b3"
-                target="_blank"><img src="/images/projetos/site-3.jpeg" alt=""></a>
+              <a href="https://github.com/jordanrafaell/Dev-Jordan/assets/61181764/86999a78-66f1-4c5f-ae9c-3a9609d40bd3"
+                target="_blank"><img src="/images/projetos/site-3.jpg" alt=""></a>
             </div>
             <div class="text_projeto">
-              <h4>Rede social</h4>
-              <h4>Em construção</h4>
-              <p>imagem ilustrativa do perfil de usuário</p>
+              <h4>Rede social | <span class="data_projeto">02/01/2024</span></h4>
               <p>Apresento meu mais recente projeto em desenvolvimento: uma rede social dedicada à comunidade de
                 desenvolvedores. Estou liderando o trabalho no front-end e ajudando no back-end, com a colaboração de um
                 talentoso parceiro de desenvolvimento. Juntos, estamos construindo uma plataforma inovadora para
@@ -255,9 +279,35 @@
                 <p>Sql</p>
                 <p>Html</p>
                 <p>Css</p>
+                <p>Figma</p>
               </div>
               <div class="link_projeto">
-                <a href="https://github.com/jordanrafaell/Dev-Jordan/assets/61181764/a84d4e79-128d-451a-b1a1-fa16c81705b3"
+                <a href="https://github.com/jordanrafaell/Dev-Jordan/assets/61181764/86999a78-66f1-4c5f-ae9c-3a9609d40bd3"
+                  target="_blank"><img src="/images/projetos/link-dark.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column_projeto" id="construindo">
+          <div class="projeto_column">
+            <div class="projeto_img">
+              <a href="https://github.com/jordanrafaell/Dev-Jordan/assets/61181764/757b1e77-7e3b-4c2c-bcb2-620eeabd8482"
+                target="_blank"><img src="/images/projetos/site-5.png" alt=""></a>
+            </div>
+            <div class="text_projeto">
+              <h4>Music Dj  | <span class="data_projeto">23/05/2024</span></h4>
+              <p>Apresento meu mais recente projeto em desenvolvimento: um aplicativo de música para desktop, semelhante ao Groover Multimídia no Windows, mas com funcionalidades novas e empolgantes. Estou desenvolvendo uma plataforma inovadora que permite não apenas ouvir suas músicas favoritas, mas também baixar músicas diretamente pelo aplicativo. Minha missão é oferecer uma experiência musical rica e integrada para todos os amantes de música.</p>
+              <div class="habilidades_projetos">
+                <p>JavaScript</p>
+                <p>React</p>
+                <p>Node.js</p>
+                <p>Electron</p>
+                <p>Html</p>
+                <p>Css</p>
+              </div>
+              <div class="link_projeto">
+                <a href="https://github.com/jordanrafaell/Dev-Jordan/assets/61181764/757b1e77-7e3b-4c2c-bcb2-620eeabd8482"
                   target="_blank"><img src="/images/projetos/link-dark.png" alt=""></a>
               </div>
             </div>
@@ -265,16 +315,15 @@
         </div>
 
 
-        <div class="column_projeto">
+        <div class="column_projeto" id="templates">
           <div class="projeto_column">
             <div class="projeto_img">
               <a href="https://home-open-pro.vercel.app/" target="_blank"><img src="/images/projetos/site-1.jpeg"
                   alt=""></a>
             </div>
             <div class="text_projeto">
-              <h4>Home-Open PRO</h4>
-              <p>Este projeto é uma landing page para startups. Me propus a fazer este desafio para aumentar minhas
-                habilidades no desenvolvimento de páginas profissionais que promovem startups.</p>
+              <h4>Home-Open PRO | <span class="data_projeto">27/10/2023</span></h4>
+              <p>Sua startup ganhará destaque com uma landing page personalizada. Crio páginas intuitivas e adaptadas para promover startups de maneira atraente, capturando a atenção dos clientes e impulsionando seu crescimento de forma eficaz e sustentável. Alcance seu público-alvo com uma presença online profissional e impactante!</p>
               <div class="habilidades_projetos">
                 <p>JavaScript</p>
                 <p>Html</p>
@@ -290,16 +339,16 @@
         </div>
 
 
-        <div class="column_projeto">
+        <div class="column_projeto" id="templates">
           <div class="projeto_column">
             <div class="projeto_img">
               <a href="https://host-alpha-pro-github-io.vercel.app/" target="_blank"><img
                   src="/images/projetos/site-2.jpeg" alt=""></a>
             </div>
             <div class="text_projeto">
-              <h4>HostAlphaPro</h4>
-              <p>HostAlphaPro é um projeto pessoal desenvolvido, dedicado à criação de templates altamente
-                personalizáveis para a criação de sites</p>
+              <h4>HostAlphaPro | 
+                <span class="data_projeto">14/11/2023</span></h4>
+              <p>HostAlphaPro é um projeto pessoal focado na criação de templates altamente personalizáveis para sites. Desenvolvi esses templates para oferecer uma solução flexível e eficiente, permitindo a criação de páginas web únicas que atendem às necessidades específicas de cada cliente.</p>
               <div class="habilidades_projetos">
                 <p>JavaScript</p>
                 <p>Html</p>
@@ -312,28 +361,130 @@
             </div>
           </div>
         </div>
+
+        <div class="column_projeto" id="lojas">
+          <div class="projeto_column">
+            <div class="projeto_img">
+              <a href="https://ecommerce-coffee-nine.vercel.app/" target="_blank"><img
+                  src="/images/projetos/site-4.jpg" alt=""></a>
+            </div>
+            <div class="text_projeto">
+              <h4>Coffee Cafe | <span class="data_projeto">18/03/2024</span></h4>
+              <p>Sua loja de bebidas ou alimentos se destacará com uma landing page personalizada. Crio páginas intuitivas e adaptadas para promover seus produtos de maneira atraente, capturando a atenção dos clientes e aumentando as vendas de forma eficaz e sustentável. Alcance seu público-alvo com uma presença online profissional e impactante!</p>
+              <div class="habilidades_projetos">
+                <p>JavaScript</p>
+                <p>Jquery</p>
+                <p>Bootstrap</p>
+                <p>Html</p>
+                <p>Css</p>
+              </div>
+              <div class="link_projeto">
+                <a href="https://ecommerce-coffee-nine.vercel.app/" target="_blank"><img
+                    src="/images/projetos/link-dark.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- <section id="testemunha"></section> -->
   </main>
 
   <footer id="contato">
-    <div class="container_contato">
-      <div class="texto_contato">
-        <div class="titulo_section">
-          <h6>Entre em contato</h6>
-        </div>
-        <div class="sub_titulo_contato">
-          <p>Sinta-se à vontade para entrar em contato comigo se estiver procurando um desenvolvedor para realizar um
-            projeto, deseja receber um orçamento ou precisa de uma consulta.</p>
-        </div>
-        <div class="contatos">
-          <a href="mailto:contatodevjordan@gmail.com">Email: <span>contatodevjordan@gmail.com</span></a>
-          <a href="https://api.whatsapp.com/send?phone=5511954378787" target="_blank">WhatsApp: <span>+55 (11)
-              95437-8787</span></a>
-        </div>
-      </div>
+    <div class="titulo_section">
+      <h6>Entre em contato</h6>
+    </div>
+    <div class="sub_titulo_contato">
+      <p>Sinta-se à vontade para entrar em contato comigo se estiver procurando um desenvolvedor para realizar um
+        projeto, deseja receber um orçamento ou precisa de uma consulta.</p>
+    </div>
+    <div class="container_form">
+        <form action="https://formsubmit.co/contatodevjordan@gmail.com" method="POST" class="form">
+          <div class="form_requisitos">
+            <div>
+              <label for="firstname" class="form_label"> Primeiro Nome </label>
+              <input type="text" name="firstname" id="firstname" placeholder="Primeiro Nome" class="form_input"
+                required />
+            </div>
+            <div>
+              <label for="lastname" class="form_label"> Sobre Nome </label>
+              <input type="text" name="lastname" id="lastname" placeholder="Sobre Nome" class="form_input" />
+            </div>
+          </div>
+
+          <div class="form_requisitos">
+            <div>
+              <label for="email" class="form_label"> E-mail </label>
+              <input type="email" name="email" id="email" placeholder="SeuEmail@mail.com" class="form_input"
+                required />
+            </div>
+            <div>
+              <label for="phone" class="form_label"> Celular </label>
+              <input type="text" name="phone" id="phone" placeholder="(xx) xxx-xxxxx" class="form_input"
+                required />
+            </div>
+          </div>
+
+          <div class="formbold-input-radio-wrapper">
+            <label for="jobtitle" class="form_label"> O que você está procurando? </label>
+
+            <div class="container_radio_input">
+              <div class="container_itens_radio">
+                <label class="form_label_radio">
+                  <input class="form_input_radio" type="radio" name="jobtitle" id="jobtitle">
+                  Site
+                  <span class="form_radio_span"></span>
+                </label>
+              </div>
+
+              <div class="container_itens_radio">
+                <label class="form_label_radio">
+                  <input class="form_input_radio" type="radio" name="jobtitle" id="jobtitle">
+                  Automação
+                  <span class="form_radio_span"></span>
+                </label>
+              </div>
+
+              <div class="container_itens_radio">
+                <label class="form_label_radio">
+                  <input class="form_input_radio" type="radio" name="jobtitle" id="jobtitle">
+                  Consulta/Avaliação
+                  <span class="form_radio_span"></span>
+                </label>
+              </div>
+
+              <div class="container_itens_radio">
+                <label class="form_label_radio">
+                  <input class="form_input_radio" type="radio" name="jobtitle" id="jobtitle">
+                  Design Banner
+                  <span class="form_radio_span"></span>
+                </label>
+              </div>
+
+              <div class="container_itens_radio">
+                <label class="form_label_radio">
+                  <input class="form_input_radio" type="radio" name="jobtitle" id="jobtitle">
+                  Outros
+                  <span class="form_radio_span"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="form_label"> Escreva sua mensagem </label>
+            <textarea rows="6" name="message" id="message" placeholder="Eu preciso.." class="form_input"
+              required></textarea>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next"
+                    value="https://dev-jordan.vercel.app/obrigado.html">
+          </div>
+
+          <button class="form_btn" type="submit">
+            Envie sua mensagem
+          </button>
+        </form>
+    </div>
   </footer>
   <!-- Scripts -->
   <script src="./scripts/app.js"></script>

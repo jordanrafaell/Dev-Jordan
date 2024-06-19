@@ -1,48 +1,72 @@
+/* CSS para tornar o footer responsivo */
+
 #contato {
   display: flex;
-  width: 100%;
-  height: 100%;
   justify-content: center;
-  background-color: var(--color-background-sobre);
-}
-
-.texto_contato {
-  display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
   width: 100%;
-  max-width: 800px;
-  color: var(--color-menu);
+  background-color: var(--background-menu-inicio);
+  padding: 20px;
 }
 
 .sub_titulo_contato {
   font-size: 20px;
-}
-
-.contatos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  gap: 1rem;
-}
-
-.contatos a{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 20px;
-  padding: 20px;
+  max-width: 700px;
+  text-align: center;
+  line-height: 40px;
   color: var(--color-menu);
 }
 
-.contatos a span{
-  margin-top: 10px;
-  color: blue;
+.container_form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_requisitos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.form_label {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.form_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 500px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+label {
+  color: var(--color-menu);
 }
