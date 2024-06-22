@@ -269,6 +269,18 @@
     background-color: var(--midia-background-habilidade);
   }
 
+
+  .form_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid;
+  }
+
 }
 
 @media (max-width: 480px) and (min-width: 100px) {
@@ -295,6 +307,17 @@
     justify-content: center;
     align-items: center;
     gap: 1px;
+  }
+
+  .form_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid;
   }
 
 }
