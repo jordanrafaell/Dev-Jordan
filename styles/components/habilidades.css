@@ -27,6 +27,7 @@
   display: grid;
   justify-content: center;
   width: 100%;
+  max-width: 1200px;
   height: auto;
   grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
   gap: 1rem;
