@@ -28,6 +28,7 @@
   --color-background-projetos-gradient-segundo: linear-gradient(90deg, rgba(17, 24, 39, 1) 50%, rgba(55, 65, 81, 1) 50%);
   --midia-background-habilidade: rgb(40, 37, 37);
   --color-traco-border: red;
+  --color-traco-cv: rgb(255, 255, 255);
 }
 
 /* Modo light */
@@ -45,6 +46,7 @@
   --color-background-projetos-gradient-segundo: linear-gradient(90deg, #D1D5DB 50%, rgb(255, 255, 255) 50%);
   --midia-background-habilidade: rgb(40, 37, 37);
   --color-traco-border: black;
+  --color-traco-cv: rgb(0, 0, 0);
 }
 
 body, html {
